@@ -1,0 +1,157 @@
+body{
+    background: linear-gradient(
+        225deg,
+            #744525, #0c0c1a, #57331b,#000000, #686864);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    min-height: 100vh;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size:1.5rem;
+  }
+li{
+    background: linear-gradient(
+        to bottom,
+        #020202 0%,
+        #8a8484 30%,
+        #808080 50%,
+        #a09797 70%,
+        #292828 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.2),
+        -2px -2px 4px rgba(255,255,255,0.3);
+    position: relative;
+}
+.cartoon-header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+
+.header-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(
+        to bottom,
+        #020202 0%,
+        #8a8484 30%,
+        #808080 50%,
+        #a09797 70%,
+        #292828 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.2),
+        -2px -2px 4px rgba(255,255,255,0.3);
+    position: relative;
+}
+button{
+    
+}
+
+.header-title:hover {
+transform: scale(1.05);
+}
+
+.header-title span {
+display: inline-block;
+transition: transform 0.3s ease;
+}
+
+.header-title:hover span {
+animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(-10px); }
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    background: linear-gradient(
+        to bottom,
+        #020202 0%,
+        #8a8484 30%,
+        #808080 50%,
+        #a09797 70%,
+        #292828 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.2),
+        -2px -2px 4px rgba(255,255,255,0.3);
+    position: relative;
+}
+h2{
+    background: linear-gradient(
+        to bottom,
+        #020202 0%,
+        #8a8484 30%,
+        #808080 50%,
+        #a09797 70%,
+        #292828 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.2),
+        -2px -2px 4px rgba(255,255,255,0.3);
+    position: relative;
+}
+h2.hover{
+    transform: scale(1.7); 
+}
+main.div{
+    height: 450px;
+    width: 320px;
+}
+
+p{
+    color: rgba(240, 248, 255, 0.603);
+    width: 300px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Animación del degradado */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
