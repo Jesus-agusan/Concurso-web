@@ -1,7 +1,7 @@
 body{
     background: linear-gradient(
         225deg,
-            #744525, #0c0c1a, #57331b,#000000, #686864);
+            #0ddd14, #e10cb3, #f3ef11,#14b8dd, #900ff1);
     background-size: 400% 400%;
     animation: gradient 12s ease infinite;
     min-height: 100vh;
@@ -9,7 +9,7 @@ body{
 }
 nav ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style-type: none;
     font-size:1.5rem;
   }
@@ -17,9 +17,9 @@ li{
     background: linear-gradient(
         to bottom,
         #020202 0%,
-        #8a8484 30%,
-        #808080 50%,
-        #a09797 70%,
+        #161515 30%,
+        #3c3939 50%,
+        #484444 70%,
         #292828 100%
     );
     -webkit-background-clip: text;
@@ -51,9 +51,9 @@ li{
     background: linear-gradient(
         to bottom,
         #020202 0%,
-        #8a8484 30%,
-        #808080 50%,
-        #a09797 70%,
+        #161515 30%,
+        #3c3939 50%,
+        #484444 70%,
         #292828 100%
     );
     -webkit-background-clip: text;
@@ -63,9 +63,6 @@ li{
         2px 2px 4px rgba(0,0,0,0.2),
         -2px -2px 4px rgba(255,255,255,0.3);
     position: relative;
-}
-button{
-    
 }
 
 .header-title:hover {
@@ -89,13 +86,14 @@ a{
     text-decoration: none;
 }
 
+
 h1{
     background: linear-gradient(
         to bottom,
         #020202 0%,
-        #8a8484 30%,
-        #808080 50%,
-        #a09797 70%,
+        #161515 30%,
+        #3c3939 50%,
+        #484444 70%,
         #292828 100%
     );
     -webkit-background-clip: text;
@@ -110,9 +108,9 @@ h2{
     background: linear-gradient(
         to bottom,
         #020202 0%,
-        #8a8484 30%,
-        #808080 50%,
-        #a09797 70%,
+        #161515 30%,
+        #3c3939 50%,
+        #484444 70%,
         #292828 100%
     );
     -webkit-background-clip: text;
@@ -123,17 +121,31 @@ h2{
         -2px -2px 4px rgba(255,255,255,0.3);
     position: relative;
 }
-h2.hover{
-    transform: scale(1.7); 
-}
 main.div{
-    height: 450px;
-    width: 320px;
+    height: 460px;
+    width: 330px;
+    border: 10px;
+    border-color: #161515;
+    border-radius: 20px;
 }
 
-p{
-    color: rgba(240, 248, 255, 0.603);
+div.spiderman{
+    margin-left: 450px;
+    margin-top: 20px;
+    height: 200px;
+    width: 1000px;
+}
+img{
+    height:250px;
+    width: 310px;
+}
+
+p.carton{
+    color: rgba(36, 37, 39, 0.603);
     width: 300px;
+}
+p.index{
+    color: #302c2c;
 }
 
 main{
@@ -154,4 +166,68 @@ main{
         background-position: 0% 50%;
     }
 }
+/* Estilos para la página Premium */
+.uno {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2.subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.premium-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.plan-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #302c2c;
+    margin: 15px 0;
+}
+
+.beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.beneficios li {
+    margin: 10px 0;
+    color: #302c2c;
+}
+
+.suscribirse {
+    background: linear-gradient(45deg, #0ddd14, #14b8dd);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.suscribirse:hover {
+    opacity: 0.9;
+}
+
+
 
